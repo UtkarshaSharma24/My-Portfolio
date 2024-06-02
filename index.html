@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utkarsh's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2021/03/31/U-Letter-logo-Graphics-10173591-1-580x387.jpg">
+    <script
+      src="https://kit.fontawesome.com/e3c1b1b106.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+   <nav>
+    <div class="left">Utkarsh's Portfolio</div>
+    <div class="right">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </div>
+   </nav>
+   <main>
+  <section class="firstSection">
+    <div class="leftSection">   
+      Hi, I'm <span>Utkarsh Sharma</span>
+      a passionate <br>
+      <span id="element"><i class="fa-solid fa-code"></i>Web Developer</span>
+       <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+    </div>
+    <div class="rightSection">
+      <img src="image/developers-hd-png-download.png" alt="developer-png">
+    </div>
+  </section>
+</main>
+
+<!-- ----------------------about---------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/user.jpg" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Utkarsh Sharma. I am a college student pursuing a B.Tech in Computer Science and Engineering specialization in Data Science.
+
+              I have skills in web development, UI/UX design, and C programming. I'm passionate about creating intuitive web interfaces and solving problems through code.
+              
+              In my free time, I enjoy working on personal projects and staying updated with the latest tech trends. Feel free to reach out to me for discussions on web development, UI/UX design, or programming.
+            </p>
+            <div class="tab-titles">Skills</div> 
+            <div>
+              <ul>
+                <li><span>UI/UX</span><br/>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>App Development</span><br/>Building Android/iOS apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------services------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+             <p> Custom website design</p>
+             <p> Responsive web development</p>
+             <p> E-commerce solutions</p>                       
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+              <p>Logo design</p>
+              <p>Branding and identity</p>
+              <p>Print collateral</p>
+              <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Mobile app design for iOS and Android</p>
+            <p>Interactive prototypes</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------portfolio----------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="image/work1.png" alt="work1" class="coffee"/>
+          </div>
+          <div class="work">
+            <img src="image/work2.png" alt="work2" />
+          </div>
+          <div class="work">
+            <img src="image/work3.png" alt="work3" />            
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!--  -------------------contact-------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>utkarshasharma3.0@gmail.com</p>
+          <p class="cn"><i class="fa-solid fa-phone"></i>0123456789</p>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/utkarsh-sharma-b71663296"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://discord.com/invite/DdHT9ETz"><i class="fa-brands fa-discord"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>            
+            <a href=""><i class="fa-brands fa-facebook"></i></a>              
+          </div>
+          <a href="my cv" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form  name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="email" placeholder="Your Email" required>
+            <textarea name="Message"  rows="6"  placeholder="Your Message"></textarea>
+            <button type="submit"  class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Utkarsh Sharma. Made with <i class="fa-solid fa-heart"></i> by Utkarsh Sharma. </p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ['<i class="fa-solid fa-code"></i>Web Developer'],
+        typeSpeed: 50,
+      });
+    </script>
+ 
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyp7OnqA7IJYXWnc1IL0Pb70NR732okfVg6UUN9B6TSHfdubuOo82noS8hP1lhKIrjY_A/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
+  </body>
+</html>
